@@ -32,3 +32,7 @@ module "service" {
     target_group = module.platform.target_group
     int_security_group = module.platform.int_security_group
 }
+
+output "URL_to_test" {
+  value = module.platform.URL_to_test
+}

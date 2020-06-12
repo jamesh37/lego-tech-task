@@ -27,4 +27,11 @@ resource "aws_lb_target_group" "tg80" {
 
 output "target_group" {
     value = aws_lb_target_group.tg80.arn
+
+    depends_on = [aws_lb.lb1]
+}
+
+#Outputs URL to access nginx holding page
+output "URL_to_test" {
+  value = aws_lb.lb1.dns_name
 }

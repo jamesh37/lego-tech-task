@@ -26,9 +26,9 @@ resource "aws_lb_target_group" "tg80" {
 }
 
 output "target_group" {
-    value = aws_lb_target_group.tg80.arn
+  value = aws_lb_target_group.tg80.arn
 
-    depends_on = [aws_lb.lb1]
+  depends_on = [aws_lb.lb1]
 }
 
 #Outputs URL to access nginx holding page

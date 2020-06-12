@@ -24,13 +24,13 @@ module "platform" {
 }
 
 module "service" {
-    source = "./modules/service"
-    desired_tasks = var.desired_tasks
-    ecs_cluster = module.platform.ecs_cluster
-    public_cidr_1 = module.platform.public_cidr_1
-    public_cidr_2 = module.platform.public_cidr_2
-    target_group = module.platform.target_group
-    int_security_group = module.platform.int_security_group
+  source             = "./modules/service"
+  desired_tasks      = var.desired_tasks
+  ecs_cluster        = module.platform.ecs_cluster
+  public_cidr_1      = module.platform.public_cidr_1
+  public_cidr_2      = module.platform.public_cidr_2
+  target_group       = module.platform.target_group
+  int_security_group = module.platform.int_security_group
 }
 
 output "URL_to_test" {

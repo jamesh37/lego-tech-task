@@ -4,5 +4,5 @@ resource "aws_ecs_cluster" "ecs" {
 }
 
 output "ecs_cluster" {
-    value = aws_ecs_cluster.ecs.id
+  value = aws_ecs_cluster.ecs.id
 }

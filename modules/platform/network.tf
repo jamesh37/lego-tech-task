@@ -75,9 +75,9 @@ resource "aws_subnet" "private2" {
 }
 
 output "public_cidr_1" {
-    value = aws_subnet.public1.id
+  value = aws_subnet.public1.id
 }
 
 output "public_cidr_2" {
-    value = aws_subnet.public2.id
+  value = aws_subnet.public2.id
 }

@@ -51,5 +51,5 @@ resource "aws_security_group" "int80" {
 }
 
 output "int_security_group" {
-    value = aws_security_group.int80.id
+  value = aws_security_group.int80.id
 }

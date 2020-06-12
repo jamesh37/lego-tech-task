@@ -25,3 +25,6 @@ resource "aws_lb_target_group" "tg80" {
   vpc_id      = aws_vpc.primary.id
 }
 
+output "target_group" {
+    value = aws_lb_target_group.tg80.arn
+}

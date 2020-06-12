@@ -49,3 +49,7 @@ resource "aws_security_group" "int80" {
     Name = "allow_80_ingress_int"
   }
 }
+
+output "int_security_group" {
+    value = aws_security_group.int80.id
+}
